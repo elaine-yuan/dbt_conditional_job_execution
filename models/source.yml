@@ -6,8 +6,8 @@ sources:
     schema: DBT_EYUAN
     tables:
       - name: source_status__test
-        loaded_at_field: load_timestamp
         config:
+          loaded_at_field: load_timestamp
           freshness:
             warn_after:
               count: 1
