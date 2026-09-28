@@ -7,12 +7,13 @@ sources:
     tables:
       - name: source_status__test
         loaded_at_field: load_timestamp
-        freshness:
-          warn_after:
-            count: 1
-            period: hour
-          error_after:
-            count: 2
-            period: hour
+        config:
+          freshness:
+            warn_after:
+              count: 1
+              period: hour
+            error_after:
+              count: 2
+              period: hour
 
       - name: dim_name
